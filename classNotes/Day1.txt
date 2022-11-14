@@ -1,0 +1,32 @@
+BDD - Behaviour Driven Development - A-TDD (Acceptance Test Driven Development)
+
+-- Gerkin Syntax - Feature, Scenario / Scenario Outline, Given (Pre Condition) , When (Action), Then (Validation), 	@anyNameTag, And, Example
+
+-- Feature File - Login.feature (.feature is the extension of the feature file)
+
+-- Scenario / Scenario Outline - Tests / Acceptenace Criteria
+
+===========================================================================
+
+Scenario: Example Scenario
+Given user loggen in to the system
+When user click account
+Then system should display the account dashborad for logged/registered user
+
+===========================================================================
+
+TDD 					| 		Cucucmber
+------------------------------------------------------------------------------------------
+@Test					|	Scenario / Scenario Outline
+Test Class.java				|	FeatureFile.feature
+@Test(groups="")			|	@tag
+DataProvider/DataDriven			|	Scenario Outline + Example
+testng.xml				|	TestRunner.java (junit)
+BaseClass				|	HookClass @Before @After (Cucumber)
+@BeforeMethod				|	Background
+xxx					|	Step Definition
+
+-- Step Definition is the heart of the feature file / actual code implementation of the feature file
+-- CucucmberOptions has some attributes (features, glue (Step dDefinition), plugins (Reporting), tags)
+
+* Maven Life Cycle - https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
