@@ -6,11 +6,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-					tags = "@regression",
+					tags = "@auto and not @steps",
 					features = "src/test/java/features/",
-					glue = "steps",
+					glue = {"base", "steps"},
 					monochrome = true,
 					dryRun = false,
-					plugin = {"html:target/index.html", "json:target/report.json"})
+					plugin = {"pretty","html:target/index.html", "json:target/report.json"})
 public class TestRunner {
 }

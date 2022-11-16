@@ -1,4 +1,4 @@
-@auto
+@regression
 Feature: Auto Quote Validation
 
   Scenario: Auto quote test
@@ -6,13 +6,14 @@ Feature: Auto Quote Validation
     And user input zipcode
     And user select auto
     When click start quote
-    And continue overlay handled
-    And speed up page handled
     Then user will be in about you page
     And title of the page will be <About You>
-   
-  @steps 
-	Scenario: Auto quote page steps
-	When homepage steps done with <"11425">
-	Then about you page steps done
-	 
+
+@smoke
+  Scenario: Auto quote test 2
+    Given user navigate to homepage
+    And user input zipcode
+    And user select auto
+    When click start quote
+    Then user will be in about you page
+    And title of the page will be <About You>
