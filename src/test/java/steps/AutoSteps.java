@@ -49,7 +49,7 @@ public class AutoSteps extends BaseClass{
 		Logs.log(getDriver().getTitle());
 	}
 	
-	@When("homepage steps done with <{string}>")
+	@When("homepage steps done with {string}")
 	public void homepage_steps_done_with(String string) {
 		homePage.autoSteps(string);
 	}

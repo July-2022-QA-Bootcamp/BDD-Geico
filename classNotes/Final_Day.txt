@@ -1,0 +1,60 @@
+Requiremnet - New User Registration – char max limit to 20 for First Name as required field
+
+Test Scenarios:
+Test 1 : User has a first name of 20 char - Happy path
+Test 2 : User enter more than 20 - Boundary
+Test 3 : User put black first name - NPE Null Pointer Error
+Test 4 : Mix of alpha numeric - Mix
+Test 5 : Special char as first name - Special Char
+
+Req - User can search anything in between 225 char
+
+Scenarios:
+Test 1 : User is searching with 225 char - Happy path
+Test 2 : User enter more than 225 - Boundary
+Test 3 : User put black search - NPE Null Pointer Error
+Test 4 : Mix of alpha numeric - Mix
+Test 5 : Special char as browse - Special Char
+
+Test Case - (Test Case have Test Steps)
+Test 1:
+@BeforeSuite
+report start
+
+@Before Method 
+Open the browser
+navigate to the application (www.amazon.com)
+add some page load time
+add implicit wait time
+
+Page Object - elemnts search bar, result page title
+Common Action - click, input
+
+@Test
+2. click search bar
+3. input 225 char - Iphone 14 pro max not chineese ..........
+4. click search
+Assertion
+5. validate the result page
+@AfterMethod
+Close the browser
+
+@AfterSuite
+Close report
+
+Test 2:
+1. navigate to the application (www.amazon.com)
+2. click search bar
+3.1. input 225+ char - Iphone 14 pro max not chineese +
+3.2. System will not accept more than 225 char
+4. click search
+5. validate the result page with the first 225 char
+
+
+BUG / DEFECT - Somthing is not working as per requirement
+Created -> Open -> Re-test-> Close -> Reopen (1/2 Days)
+Created -> Open -> Deffered
+Show Stopper - Some bug is blocking more than 30% of the application
+Hot Fix - 2 hours
+
+Scenario Outline : When we want to run same scenarios / steps with different set of data, then we use scenario outline with Example keyword, where we put sets of data under Example
