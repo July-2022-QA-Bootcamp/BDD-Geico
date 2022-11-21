@@ -15,4 +15,16 @@ Feature: Auto Quote Validation
 	Scenario: Auto quote page steps
 	When homepage steps done with <"11425">
 	Then about you page steps done
+	
+	@data-driven
+	Scenario Outline: Data Driven approach for BDD
+	When homepage steps done with <zip>
+	Then about you page steps done
+	Examples: 
+	|zip|
+	|'11418'|
+	|'11425'|
+	|'11373'|
+	
+	
 	 
