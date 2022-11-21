@@ -1,0 +1,78 @@
+8am - 5pm (12-1 launch)
+-----------------------
+1. We checked our email for meetings/ important task
+2. Attending DSR (Daily Standup Reporting / Daily Scrum) / DSU (Daily Standup) - 15-30 mins () S2 / Parking Lot
+ a. What we did yesterday? Tickets / Task number
+ b. Is there any blocker?
+ c. What we will do today?
+3. More Meetings > (Sprint Ceremonies)
+	Sprint Grooming - Blacklog (Wednesday)
+	Sprint Planning - Story Point (Time + Complex) (Dev + QA)
+	Sprint demo - 
+	QA Dev sync - Optional
+	Defect triage - Optional
+	Test Case Review
+	Sprint Review
+	Sprint Retrospective - What we didnt like, how can we make it better, action items
+	1-1 (Feedback, Need help)
+	KT (Knowledege Transfer)
+4. Design/Plan Test Cases
+5. Manual Test
+6. Scripting Test Cases for Automation
+7. Writing a defect (Defect Lifecycle)
+8. Communication (Dev for defect progress. Answer team/Manager's call)
+9. Take ownership
+10. Be responsible
+11. Did you try everything possible?
+12. Do not seat idle. Move to next task.
+13. No task? ask your manager or scrum master or help your team
+14. Share your daily status with your team lead/ manager
+15. Learn the domain, learn the tech and learn new tools
+16. Attend Team meeting (Occasional, ceremony, fun, games, dinner, lunch)
+17. Outing with your team
+18. Be timely
+19. Maintain proffesional behaviour
+20. Productive, Punctual
+
+Resources - Tools, Documentations (Confluence Page, Swagger)
+
+Additional:
+==========
+Test Cases:
+-----------
+Acceptence Criteria :
+AC1. 	Given user is in Products > home accessories
+	When user monitors
+	Then user will naviagte to dell.monitor
+	And Top of the page there will be 'Days of the deals'
+	When user clicks on the 'Days of the deals'
+	Then user will naviage to Electronincs deals
+
+
+TC1. Dell monitor
+TC2. Days of the deals
+
+Test Cases :
+	Scenario Outline : Validating Dell Monitor Functionality
+	Given user is in <page1>
+	When user selects <item>
+	Then use is in <page2>
+	Examples:
+	|page1	 |item   |page2       |
+	|products|monitor|dell.monitor|
+
+Defects:
+The current functionality is not behaving/working as per requiremnts.
+
+1. Check with senior team members / QA manager / developer/ other team to make sure it is a valid defect
+2. Reproduce it 3 times 
+3. Attach proofs. Screen Shoot, Recorded video, codes, logs, pdf. (Splunk, Elastic, Grafana)
+4. Step to reproduce.
+5. Attach requiremnts. (Epic, User Story, Task)
+
+Severity of the impact vs Priority of functionality
+
+Defects/Observation: Against Requiremnts
+Bug: Something wrong in the code implementation
+
+Bug Life Cycle - https://www.softwaretestinghelp.com/bug-life-cycle/
